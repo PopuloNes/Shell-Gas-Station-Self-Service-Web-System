@@ -1,0 +1,14 @@
+C:\Users\metro\Desktop\Petrol\Petrol\bin\Debug\net10.0\Petrol.deps.json
+C:\Users\metro\Desktop\Petrol\Petrol\bin\Debug\net10.0\Petrol.runtimeconfig.json
+C:\Users\metro\Desktop\Petrol\Petrol\bin\Debug\net10.0\Petrol.dll
+C:\Users\metro\Desktop\Petrol\Petrol\bin\Debug\net10.0\Petrol.pdb
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.csproj.AssemblyReference.cache
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.AssemblyInfoInputs.cache
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.AssemblyInfo.cs
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.csproj.CoreCompileInputs.cache
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.dll
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\refint\Petrol.dll
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.pdb
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\Petrol.genruntimeconfig.cache
+C:\Users\metro\Desktop\Petrol\Petrol\obj\Debug\net10.0\ref\Petrol.dll

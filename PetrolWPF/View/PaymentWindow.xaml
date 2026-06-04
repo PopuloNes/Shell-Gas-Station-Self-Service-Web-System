@@ -1,0 +1,252 @@
+<Window x:Class="PetrolWPF.View.PaymentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Payment System" Height="650" Width="600" WindowStartupLocation="CenterScreen" Background="#F8F9FA">
+    
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Complete your payment" FontSize="22" FontWeight="SemiBold" Margin="0,0,0,15" Foreground="#333"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <!-- Login/Register Section -->
+                <GroupBox Header="Account / Identification" Margin="0,0,0,15" Padding="10"
+                          Visibility="{Binding ClientUser, Converter={StaticResource BoolToVis}, ConverterParameter=Inverted}">
+                    <GroupBox.Style>
+                        <Style TargetType="GroupBox">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ClientUser}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </Style>
+                    </GroupBox.Style>
+                    <StackPanel>
+                        <TextBlock Text="Login or Register to save payment methods and earn bonuses." Margin="0,0,0,10" Foreground="#555"/>
+                        
+                        <StackPanel Visibility="{Binding IsRegisterMode, Converter={StaticResource BoolToVis}}">
+                            <TextBox Margin="0,5" Text="{Binding FullName}" MaxLength="50" Height="28"/>
+                            <TextBlock Text="Full Name" Foreground="Gray" Margin="5,-27,0,0" IsHitTestVisible="False" Visibility="{Binding FullName.Length, Converter={StaticResource BoolToVis}, ConverterParameter=Inverted}"/>
+                        </StackPanel>
+                        
+                        <TextBox Margin="0,5" Text="{Binding Username}" Height="28"/>
+                        <TextBlock Text="Username" Foreground="Gray" Margin="5,-27,0,0" IsHitTestVisible="False"/>
+                        
+                        <PasswordBox x:Name="PasswordBox" Margin="0,5" PasswordChanged="PasswordBox_PasswordChanged" Height="28"/>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                            <Button Content="Login" Width="100" Height="30" Margin="0,0,10,0" Command="{Binding LoginCommand}" 
+                                    Background="#007BFF" Foreground="White" BorderThickness="0">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsRegisterMode}" Value="True">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>    
+                            </Button>
+                            
+                            <Button Content="Register" Width="100" Height="30" Command="{Binding RegisterCommand}" Background="#28A745" Foreground="White" BorderThickness="0">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsRegisterMode}" Value="False">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>  
+                            </Button>
+
+                            <CheckBox Content="I want to register" IsChecked="{Binding IsRegisterMode}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- User Info -->
+                <TextBlock Text="{Binding ClientUser.FullName, StringFormat='Logged in as: {0}'}" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,10" Foreground="#222">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ClientUser}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+                <!-- Bonus Application -->
+                <GroupBox Header="Bonuses" Margin="0,0,0,15" Padding="10">
+                    <GroupBox.Style>
+                        <Style TargetType="GroupBox">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ClientBonusCard}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </GroupBox.Style>
+                    <StackPanel>
+                        <TextBlock Text="{Binding ClientBonusCard.BonusBalance, StringFormat='Available Bonuses: {0:F0}'}" Margin="0,0,0,5" FontWeight="Medium"/>
+                        <CheckBox Content="Use bonuses for discount" IsChecked="{Binding UseBonuses}" Margin="0,5"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,5">
+                            <TextBlock Text="Bonuses to spend:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                            <TextBox Text="{Binding BonusesToSpend, UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25" IsEnabled="{Binding UseBonuses}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- Payment Methods -->
+                <GroupBox Header="Payment details" Margin="0,0,0,15" Padding="10" Background="White" BorderBrush="#E0E0E0">
+                    <StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            <RadioButton Content="Saved Methods" Margin="0,0,15,0" IsChecked="{Binding IsAddingNewMethod, Converter={StaticResource BoolToVis}, ConverterParameter=Inverted}" Command="{Binding ToggleAddNewMethodCommand}"/>
+                            <RadioButton Content="Add New Method" IsChecked="{Binding IsAddingNewMethod}" Command="{Binding ToggleAddNewMethodCommand}"/>
+                        </StackPanel>
+
+                        <!-- Saved Methods List -->
+                        <ListView ItemsSource="{Binding SavedPaymentMethods}" SelectedItem="{Binding SelectedPaymentMethod}" 
+                                  MinHeight="50" MaxHeight="150" Margin="0,5,0,10" BorderThickness="1" BorderBrush="#E0E0E0">
+                            <ListView.Style>
+                                <Style TargetType="ListView">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsAddingNewMethod}" Value="False">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListView.Style>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Type}" FontWeight="SemiBold" Margin="0,0,10,0"/>
+                                            <TextBlock Text="{Binding Details}" Foreground="#555"/>
+                                        </StackPanel>
+                                        <Button Grid.Column="1" Content="Remove" Foreground="Red" Background="Transparent" BorderThickness="0"
+                                                Command="{Binding DataContext.DeletePaymentMethodCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                CommandParameter="{Binding}" Cursor="Hand"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        
+                        <!-- Add New Method (Stripe-like UI) -->
+                        <Border BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="5" Padding="15" Background="#FAFAFA">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsAddingNewMethod}" Value="False">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            
+                            <StackPanel>
+                                <!-- Tab Control for Method Type -->
+                                <TabControl SelectedIndex="{Binding PaymentMethodTabIndex}" Background="Transparent" BorderThickness="0">
+                                    <TabControl.Resources>
+                                        <Style TargetType="TabItem">
+                                            <Setter Property="Padding" Value="10,5"/>
+                                            <Setter Property="Margin" Value="0,0,5,0"/>
+                                        </Style>
+                                    </TabControl.Resources>
+                                    
+                                    <!-- Card Tab -->
+                                    <TabItem Header="Card">
+                                        <StackPanel Margin="0,15,0,0">
+                                            <TextBlock Text="Card Information" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                                            <Border BorderBrush="#CCC" BorderThickness="1" CornerRadius="3" Background="White">
+                                                <StackPanel>
+                                                    <TextBox x:Name="CardNumberBox" Text="{Binding CardNumber, UpdateSourceTrigger=PropertyChanged}" 
+                                                             BorderThickness="0" Padding="10" FontSize="14" Height="40" Background="Transparent"
+                                                             TextChanged="CardNumberBox_TextChanged" MaxLength="19"/>
+                                                    <Separator Margin="0"/>
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="1"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBox Grid.Column="0" Text="{Binding CardExpiry, UpdateSourceTrigger=PropertyChanged}" 
+                                                                 BorderThickness="0" Padding="10" FontSize="14" Height="40" Background="Transparent"
+                                                                 TextChanged="CardExpiryBox_TextChanged" MaxLength="5"/>
+                                                        <Border Grid.Column="1" Background="#CCC"/>
+                                                        <TextBox Grid.Column="2" Text="{Binding CardCVC, UpdateSourceTrigger=PropertyChanged}" 
+                                                                 BorderThickness="0" Padding="10" FontSize="14" Height="40" Background="Transparent"
+                                                                 MaxLength="3"/>
+                                                    </Grid>
+                                                </StackPanel>
+                                            </Border>
+                                        </StackPanel>
+                                    </TabItem>
+                                    
+                                    <!-- Blik Tab -->
+                                    <TabItem Header="Blik">
+                                        <StackPanel Margin="0,15,0,0">
+                                            <TextBlock Text="Enter 6-digit Blik code" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                                            <TextBox Text="{Binding BlikCode, UpdateSourceTrigger=PropertyChanged}" 
+                                                     BorderBrush="#CCC" BorderThickness="1" Padding="10" FontSize="18" Height="45" HorizontalContentAlignment="Center"
+                                                     MaxLength="6" Background="White"/>
+                                        </StackPanel>
+                                    </TabItem>
+                                    
+                                    <!-- Crypto Tab -->
+                                    <TabItem Header="Crypto">
+                                        <StackPanel Margin="0,15,0,0">
+                                            <TextBlock Text="Connect Wallet Address" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                                            <TextBox Text="{Binding CryptoAddress, UpdateSourceTrigger=PropertyChanged}" 
+                                                     BorderBrush="#CCC" BorderThickness="1" Padding="10" FontSize="14" Height="40" Background="White"/>
+                                        </StackPanel>
+                                    </TabItem>
+                                </TabControl>
+                                
+                                <CheckBox Content="Save this payment method for future purchases" IsChecked="{Binding SaveNewMethod}" 
+                                          Margin="0,15,0,0" Foreground="#555"
+                                          Visibility="{Binding ClientUser, Converter={StaticResource BoolToVis}}"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- Summary -->
+                <Border Background="#F4F6F8" Padding="15" CornerRadius="5" BorderBrush="#E2E8F0" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="{Binding TotalAmount, StringFormat='Subtotal: {0:F2} $'}" FontSize="14" HorizontalAlignment="Right" Foreground="#64748B"/>
+                        <TextBlock Text="{Binding BonusesToSpend, StringFormat='Discount: -{0} $'}" FontSize="14" Foreground="#10B981" HorizontalAlignment="Right" Visibility="{Binding UseBonuses, Converter={StaticResource BoolToVis}}"/>
+                        <TextBlock Text="{Binding AmountToPay, StringFormat='Total to Pay: {0:F2} $'}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,5,0,0" Foreground="#0F172A"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button Content="Cancel" Width="100" Height="40" Margin="0,0,10,0" Click="CancelButton_Click" Background="White" BorderBrush="#CCC"/>
+            <Button Content="Pay" Width="140" Height="40" Background="#000" Foreground="White" FontWeight="Bold" FontSize="14" BorderThickness="0" Command="{Binding ConfirmPaymentCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>

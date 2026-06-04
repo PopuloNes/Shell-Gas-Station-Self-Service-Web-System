@@ -1,0 +1,1528 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\metro\\Desktop\\Petrol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\petrolwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\petrolwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\bonuscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\bonuscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\fueltypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\fueltypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\petrol.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\petrol.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PetrolWPF\\PetrolWPF.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stadn\\.nuget\\packages\\microsoft.testing.platform.msbuild\\2.1.0\\buildMultiTargeting\\Microsoft.Testing.Platform.MSBuild.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stadn\\Desktop\\Petrol\\PetrolWPF\\obj\\Debug\\net10.0-windows\\View\\BonusCardEditWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\fueltypeeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\fueltypeeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\fueltypeeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\fueltypeeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\petrolwpf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\petrolwpf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\bonuswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\bonuswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\zreportdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\zreportdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\pumpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\pumpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\usereditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\usereditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\settingstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\settingstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\orderprocessors\\fuelorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\orderprocessors\\fuelorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\ordersection\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\ordersection\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\admindashboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\admindashboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\bonuscardeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\bonuscardeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\bonuscardsmanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\bonuscardsmanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\bonuswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\bonuswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\producteditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\producteditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\pumpeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\pumpeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\tankeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\tankeditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\tankeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\tankeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\usereditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\usereditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\viewmodel\\pumpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\viewmodel\\pumpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\viewmodel\\bonuscardsmanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\viewmodel\\bonuscardsmanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\viewmodel\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\viewmodel\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\pumpeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\pumpeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\producteditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\producteditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\bonuscardsmanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\bonuscardsmanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\bonuscardeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\bonuscardeditwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\authwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\authwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\view\\admindashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\view\\admindashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\converters\\bytearraytoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\converters\\bytearraytoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\converters\\productschangedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\converters\\productschangedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\customcontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\customcontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\bytearraytoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\bytearraytoimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\view\\pumpcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\view\\pumpcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\view\\productcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\view\\productcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\view\\orderitemcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\view\\orderitemcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\view\\orderitemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\view\\orderitemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\tanksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\tanksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\orderbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\orderbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\view\\productcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\view\\productcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\ipumpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\ipumpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\itanksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\itanksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\igoodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\igoodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\iorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\iorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\ibonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\ibonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\ifueltypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\ifueltypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\fuelstuff\\fueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\fuelstuff\\fueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\fuelstuff\\tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\fuelstuff\\tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\goodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\goodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\accets\\logo.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\accets\\logo.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\accets\\credit.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\accets\\credit.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\accets\\build.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\accets\\build.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\accets\\logotip-petrorazmik_en-removebg-preview (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\accets\\logotip-petrorazmik_en-removebg-preview (2).png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|c:\\users\\metro\\desktop\\petrol\\petrolwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9103E2EA-8034-4A8F-AE97-9C7DC8634734}|PetrolWPF\\PetrolWPF.csproj|solutionrelative:petrolwpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\ordersection\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\ordersection\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\services\\bonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\services\\bonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\fuelstuff\\pump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\fuelstuff\\pump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|c:\\users\\metro\\desktop\\petrol\\petrolcontrollibrary\\petrolcontrollibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{30E628EA-46AE-5A27-D258-EA2206F7439C}|PetrolControlLibrary\\PetrolControlLibrary.csproj|solutionrelative:petrolcontrollibrary\\petrolcontrollibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|c:\\users\\metro\\desktop\\petrol\\petrol\\model\\ordersection\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAEFD646-E57A-E7E5-17BB-91D9D44FF7D6}|Petrol\\Petrol.csproj|solutionrelative:petrol\\model\\ordersection\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\orderbuildertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\orderbuildertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\testdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\testdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\tanksservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\tanksservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\statisticsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\statisticsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\userservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\userservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\pumpservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\pumpservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\goodsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\goodsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\fueltypeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\fueltypeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|c:\\users\\metro\\desktop\\petrol\\petrolunittests\\bonusservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11611FEF-0EA4-45B5-9411-E9944770C102}|PetrolUnitTests\\PetrolUnitTests.csproj|solutionrelative:petrolunittests\\bonusservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BonusCard.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\BonusCard.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\BonusCard.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\BonusCard.cs",
+              "RelativeToolTip": "Petrol\\Model\\BonusCard.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T20:34:45.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClassDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\ClassDiagram.cd",
+              "RelativeDocumentMoniker": "Petrol\\ClassDiagram.cd",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\ClassDiagram.cd",
+              "RelativeToolTip": "Petrol\\ClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2026-04-04T08:19:54.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PetrolWPF",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj",
+              "RelativeDocumentMoniker": "PetrolWPF\\PetrolWPF.csproj",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj",
+              "RelativeToolTip": "PetrolWPF\\PetrolWPF.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-12T14:55:17.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BonusWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\BonusWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\BonusWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T15:52:09.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PetrolWPF.csproj",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj",
+              "RelativeDocumentMoniker": "PetrolWPF\\PetrolWPF.csproj",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj",
+              "RelativeToolTip": "PetrolWPF\\PetrolWPF.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-09T08:02:33.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\AppDbContext.cs",
+              "RelativeToolTip": "Petrol\\Services\\AppDbContext.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwEAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:03:59.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FuelTypeEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\FuelTypeEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\FuelTypeEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\FuelTypeEditWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\FuelTypeEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T13:19:35.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\App.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:22:01.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\MainWindow.xaml*",
+              "RelativeToolTip": "PetrolWPF\\View\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-08T15:39:54.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FuelTypeEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\FuelTypeEditWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\FuelTypeEditWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\FuelTypeEditWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\FuelTypeEditWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T13:19:12.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FuelTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\FuelTypeService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\FuelTypeService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\FuelTypeService.cs",
+              "RelativeToolTip": "Petrol\\Services\\FuelTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T09:40:39.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Petrol.csproj",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Petrol.csproj",
+              "RelativeDocumentMoniker": "Petrol\\Petrol.csproj",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Petrol.csproj",
+              "RelativeToolTip": "Petrol\\Petrol.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-26T20:17:49.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ZReportData.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\ZReportData.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\ZReportData.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\ZReportData.cs",
+              "RelativeToolTip": "Petrol\\Model\\ZReportData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T12:50:50.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PetrolWPF.csproj.user",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj.user",
+              "RelativeDocumentMoniker": "PetrolWPF\\PetrolWPF.csproj.user",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\PetrolWPF.csproj.user",
+              "RelativeToolTip": "PetrolWPF\\PetrolWPF.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2026-04-18T23:20:18.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PumpService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\PumpService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\PumpService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\PumpService.cs",
+              "RelativeToolTip": "Petrol\\Services\\PumpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T10:00:10.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\UserEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\UserEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\UserEditWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\UserEditWindow.xaml.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:32:00.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SettingsTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\SettingsTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\SettingsTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\SettingsTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\SettingsTests.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:11:27.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FuelOrderProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderProcessors\\FuelOrderProcessor.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\OrderProcessors\\FuelOrderProcessor.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderProcessors\\FuelOrderProcessor.cs",
+              "RelativeToolTip": "Petrol\\Model\\OrderProcessors\\FuelOrderProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T09:55:28.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:17:59.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\OrderService.cs",
+              "RelativeToolTip": "Petrol\\Services\\OrderService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwBcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:13:27.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderSection\\Product.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\OrderSection\\Product.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderSection\\Product.cs",
+              "RelativeToolTip": "Petrol\\Model\\OrderSection\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:17:34.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\ViewModel\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeToolTip": "PetrolWPF\\ViewModel\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAIwBAAAAoCFy+ioBwJsBAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T15:25:13.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AdminDashboardWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AdminDashboardWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\AdminDashboardWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AdminDashboardWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\AdminDashboardWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T07:22:19.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AuthWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\AuthWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AuthWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\AuthWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-08T15:25:29.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BonusCardEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardEditWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\BonusCardEditWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardEditWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\BonusCardEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T19:20:15.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BonusCardsManagementWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardsManagementWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\BonusCardsManagementWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardsManagementWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\BonusCardsManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T19:20:56.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BonusWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\BonusWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\BonusWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-08T15:26:03.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\ProductEditWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\ProductEditWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\ProductEditWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\ProductEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T07:55:40.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PumpEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\PumpEditWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\PumpEditWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\PumpEditWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\PumpEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T13:22:17.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TankEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\TankEditWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\TankEditWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\TankEditWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\TankEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T13:35:56.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TankEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\TankEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\TankEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\TankEditWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\TankEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T13:36:24.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\UserEditWindow.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\UserEditWindow.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\UserEditWindow.xaml",
+              "RelativeToolTip": "PetrolWPF\\View\\UserEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T07:31:11.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\App.xaml",
+              "RelativeDocumentMoniker": "PetrolWPF\\App.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\App.xaml",
+              "RelativeToolTip": "PetrolWPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-08T15:52:33.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PumpViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\PumpViewModel.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\ViewModel\\PumpViewModel.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\PumpViewModel.cs",
+              "RelativeToolTip": "PetrolWPF\\ViewModel\\PumpViewModel.cs",
+              "ViewState": "AgIAAAUAAADgb3uCxN4UwAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T09:59:19.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BonusCardsManagementViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\BonusCardsManagementViewModel.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\ViewModel\\BonusCardsManagementViewModel.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\BonusCardsManagementViewModel.cs",
+              "RelativeToolTip": "PetrolWPF\\ViewModel\\BonusCardsManagementViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:23:58.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\ViewModel\\AdminDashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\ViewModel\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "PetrolWPF\\ViewModel\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAH0CAAAAwAUSFG8uwJ4BAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T15:25:11.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PumpEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\PumpEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\PumpEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\PumpEditWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\PumpEditWindow.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T13:24:56.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProductEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\ProductEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\ProductEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\ProductEditWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\ProductEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:55:57.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T15:40:41.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BonusCardsManagementWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardsManagementWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\BonusCardsManagementWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardsManagementWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\BonusCardsManagementWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:21:12.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BonusCardEditWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardEditWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\BonusCardEditWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\BonusCardEditWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\BonusCardEditWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:25:35.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AuthWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AuthWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\AuthWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AuthWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\AuthWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:23:37.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AdminDashboardWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AdminDashboardWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\View\\AdminDashboardWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\View\\AdminDashboardWindow.xaml.cs",
+              "RelativeToolTip": "PetrolWPF\\View\\AdminDashboardWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:22:18.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ByteArrayToImageConverter.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Converters\\ByteArrayToImageConverter.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\Converters\\ByteArrayToImageConverter.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Converters\\ByteArrayToImageConverter.cs",
+              "RelativeToolTip": "PetrolWPF\\Converters\\ByteArrayToImageConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T08:02:58.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProductsChangedMessage.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Converters\\ProductsChangedMessage.cs",
+              "RelativeDocumentMoniker": "PetrolWPF\\Converters\\ProductsChangedMessage.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Converters\\ProductsChangedMessage.cs",
+              "RelativeToolTip": "PetrolWPF\\Converters\\ProductsChangedMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T08:03:58.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CustomControl1.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\CustomControl1.cs",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\CustomControl1.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\CustomControl1.cs",
+              "RelativeToolTip": "PetrolControlLibrary\\CustomControl1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T16:20:43.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ByteArrayToImageConverter.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\ByteArrayToImageConverter.cs",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\ByteArrayToImageConverter.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\ByteArrayToImageConverter.cs",
+              "RelativeToolTip": "PetrolControlLibrary\\ByteArrayToImageConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T08:09:32.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\AssemblyInfo.cs",
+              "RelativeToolTip": "PetrolControlLibrary\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T08:09:40.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PumpControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\PumpControl.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\View\\PumpControl.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\PumpControl.xaml.cs",
+              "RelativeToolTip": "PetrolControlLibrary\\View\\PumpControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T10:14:02.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ProductControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\ProductControl.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\View\\ProductControl.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\ProductControl.xaml.cs",
+              "RelativeToolTip": "PetrolControlLibrary\\View\\ProductControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:48:37.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OrderItemControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\OrderItemControl.xaml.cs",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\View\\OrderItemControl.xaml.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\OrderItemControl.xaml.cs",
+              "RelativeToolTip": "PetrolControlLibrary\\View\\OrderItemControl.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T16:04:27.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "OrderItemControl.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\OrderItemControl.xaml",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\View\\OrderItemControl.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\OrderItemControl.xaml",
+              "RelativeToolTip": "PetrolControlLibrary\\View\\OrderItemControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T06:40:20.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "TanksService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\TanksService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\TanksService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\TanksService.cs",
+              "RelativeToolTip": "Petrol\\Services\\TanksService.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAYwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:09:28.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "OrderBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\OrderBuilder.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\OrderBuilder.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\OrderBuilder.cs",
+              "RelativeToolTip": "Petrol\\Services\\OrderBuilder.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T06:46:28.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ProductControl.xaml",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\ProductControl.xaml",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\View\\ProductControl.xaml",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\View\\ProductControl.xaml",
+              "RelativeToolTip": "PetrolControlLibrary\\View\\ProductControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-09T08:07:58.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "StatisticsService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\StatisticsService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\StatisticsService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\StatisticsService.cs",
+              "RelativeToolTip": "Petrol\\Services\\StatisticsService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwHIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:19:55.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IPumpService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IPumpService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IPumpService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IPumpService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IPumpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T10:00:21.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ITanksService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\ITanksService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\ITanksService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\ITanksService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\ITanksService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:41:48.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\ReportService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\ReportService.cs",
+              "RelativeToolTip": "Petrol\\Services\\ReportService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T12:51:39.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IGoodsService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IGoodsService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IGoodsService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IGoodsService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IGoodsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T14:08:02.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IOrderProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IOrderProcessor.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IOrderProcessor.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IOrderProcessor.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IOrderProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T12:51:21.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "IBonusService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IBonusService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IBonusService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IBonusService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IBonusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:19:25.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "IFuelTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IFuelTypeService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IFuelTypeService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IFuelTypeService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IFuelTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T12:51:20.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Microsoft.WinFX.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ViewState": "AgIAANMBAAAAAAAAAAAIwNcBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-11T13:05:37.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "FuelType.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\FuelStuff\\FuelType.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\FuelStuff\\FuelType.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\FuelStuff\\FuelType.cs",
+              "RelativeToolTip": "Petrol\\Model\\FuelStuff\\FuelType.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T09:38:34.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Tank.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\FuelStuff\\Tank.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\FuelStuff\\Tank.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\FuelStuff\\Tank.cs",
+              "RelativeToolTip": "Petrol\\Model\\FuelStuff\\Tank.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA8wEMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T13:37:55.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "GoodsService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\GoodsService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\GoodsService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\GoodsService.cs",
+              "RelativeToolTip": "Petrol\\Services\\GoodsService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:13:22.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "logo.jpg -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - Bitmap [95x97, 24-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, JPG]",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\logo.jpg",
+              "RelativeDocumentMoniker": "PetrolWPF\\Accets\\logo.jpg",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\logo.jpg -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - Bitmap [95x97, 24-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, JPG]",
+              "RelativeToolTip": "PetrolWPF\\Accets\\logo.jpg -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - Bitmap [95x97, 24-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-11T14:16:20.398Z",
+              "EditorCaption": " -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - Bitmap [95x97, 24-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "credit.png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\credit.png",
+              "RelativeDocumentMoniker": "PetrolWPF\\Accets\\credit.png",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\credit.png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "RelativeToolTip": "PetrolWPF\\Accets\\credit.png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-11T14:16:19.317Z",
+              "EditorCaption": " -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "build.png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\build.png",
+              "RelativeDocumentMoniker": "PetrolWPF\\Accets\\build.png",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\build.png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "RelativeToolTip": "PetrolWPF\\Accets\\build.png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-11T14:16:18.226Z",
+              "EditorCaption": " -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [24x24, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "logotip-petrorazmik_en-removebg-preview (2).png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [1000x162, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\logotip-petrorazmik_en-removebg-preview (2).png",
+              "RelativeDocumentMoniker": "PetrolWPF\\Accets\\logotip-petrorazmik_en-removebg-preview (2).png",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\Accets\\logotip-petrorazmik_en-removebg-preview (2).png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [1000x162, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "RelativeToolTip": "PetrolWPF\\Accets\\logotip-petrorazmik_en-removebg-preview (2).png -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [1000x162, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-11T14:12:09.578Z",
+              "EditorCaption": " -  [\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 (\u0421\u0428\u0410)] - PNG [1000x162, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\App.config",
+              "RelativeDocumentMoniker": "PetrolWPF\\App.config",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolWPF\\App.config",
+              "RelativeToolTip": "PetrolWPF\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-08T15:52:34.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderSection\\Order.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\OrderSection\\Order.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderSection\\Order.cs",
+              "RelativeToolTip": "Petrol\\Model\\OrderSection\\Order.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T16:21:28.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:33:21.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\User\\User.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\User\\User.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\User\\User.cs",
+              "RelativeToolTip": "Petrol\\Model\\User\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T13:17:22.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Microsoft.Testing.Platform.MSBuild.targets",
+              "DocumentMoniker": "C:\\Users\\stadn\\.nuget\\packages\\microsoft.testing.platform.msbuild\\2.1.0\\buildMultiTargeting\\Microsoft.Testing.Platform.MSBuild.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\stadn\\.nuget\\packages\\microsoft.testing.platform.msbuild\\2.1.0\\buildMultiTargeting\\Microsoft.Testing.Platform.MSBuild.targets",
+              "ToolTip": "C:\\Users\\stadn\\.nuget\\packages\\microsoft.testing.platform.msbuild\\2.1.0\\buildMultiTargeting\\Microsoft.Testing.Platform.MSBuild.targets",
+              "RelativeToolTip": "..\\..\\..\\stadn\\.nuget\\packages\\microsoft.testing.platform.msbuild\\2.1.0\\buildMultiTargeting\\Microsoft.Testing.Platform.MSBuild.targets",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAewGcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-11T13:05:30.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IReportService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Interfaces\\IReportService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Interfaces\\IReportService.cs",
+              "RelativeToolTip": "Petrol\\Interfaces\\IReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T12:51:07.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BonusCardEditWindow.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\stadn\\Desktop\\Petrol\\PetrolWPF\\obj\\Debug\\net10.0-windows\\View\\BonusCardEditWindow.g.i.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\stadn\\Desktop\\Petrol\\PetrolWPF\\obj\\Debug\\net10.0-windows\\View\\BonusCardEditWindow.g.i.cs",
+              "ToolTip": "C:\\Users\\stadn\\Desktop\\Petrol\\PetrolWPF\\obj\\Debug\\net10.0-windows\\View\\BonusCardEditWindow.g.i.cs",
+              "RelativeToolTip": "..\\..\\..\\stadn\\Desktop\\Petrol\\PetrolWPF\\obj\\Debug\\net10.0-windows\\View\\BonusCardEditWindow.g.i.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAtwGEAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:25:54.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "BonusService.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\BonusService.cs",
+              "RelativeDocumentMoniker": "Petrol\\Services\\BonusService.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Services\\BonusService.cs",
+              "RelativeToolTip": "Petrol\\Services\\BonusService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwHwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:19:10.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Pump.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\FuelStuff\\Pump.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\FuelStuff\\Pump.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\FuelStuff\\Pump.cs",
+              "RelativeToolTip": "Petrol\\Model\\FuelStuff\\Pump.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T13:56:52.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "PetrolControlLibrary.csproj",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\PetrolControlLibrary.csproj",
+              "RelativeDocumentMoniker": "PetrolControlLibrary\\PetrolControlLibrary.csproj",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolControlLibrary\\PetrolControlLibrary.csproj",
+              "RelativeToolTip": "PetrolControlLibrary\\PetrolControlLibrary.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-04T08:19:52.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderSection\\CartItem.cs",
+              "RelativeDocumentMoniker": "Petrol\\Model\\OrderSection\\CartItem.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\Petrol\\Model\\OrderSection\\CartItem.cs",
+              "RelativeToolTip": "Petrol\\Model\\OrderSection\\CartItem.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T07:08:11.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "OrderBuilderTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\OrderBuilderTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\OrderBuilderTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\OrderBuilderTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\OrderBuilderTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:10:53.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "TestDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\TestDbContextFactory.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\TestDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\TestDbContextFactory.cs",
+              "RelativeToolTip": "PetrolUnitTests\\TestDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:04:38.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "TanksServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\TanksServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\TanksServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\TanksServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\TanksServiceTests.cs",
+              "ViewState": "AgIAAK0BAAAAAAAAAAAIwMEBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:15:11.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "StatisticsServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\StatisticsServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\StatisticsServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\StatisticsServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\StatisticsServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:12:36.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "UserServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\UserServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\UserServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\UserServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\UserServiceTests.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAowLsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:16:42.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Microsoft.NET.GenerateAssemblyInfo.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.104\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAswLUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-08T16:01:25.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "OrderServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\OrderServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\OrderServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\OrderServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\OrderServiceTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:11:40.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "PumpServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\PumpServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\PumpServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\PumpServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\PumpServiceTests.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAgwNQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:13:40.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "GoodsServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\GoodsServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\GoodsServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\GoodsServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\GoodsServiceTests.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAUwM8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:10:13.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "FuelTypeServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\FuelTypeServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\FuelTypeServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\FuelTypeServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\FuelTypeServiceTests.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAqwMoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:08:48.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "AuthServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\AuthServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\AuthServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\AuthServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\AuthServiceTests.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:05:06.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "BonusServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\BonusServiceTests.cs",
+              "RelativeDocumentMoniker": "PetrolUnitTests\\BonusServiceTests.cs",
+              "ToolTip": "C:\\Users\\metro\\Desktop\\Petrol\\PetrolUnitTests\\BonusServiceTests.cs",
+              "RelativeToolTip": "PetrolUnitTests\\BonusServiceTests.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAswJwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T08:06:00.367Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
