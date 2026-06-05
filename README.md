@@ -64,8 +64,8 @@ Upon the first database initialization, the system automatically seeds test user
 *   **Password:** `admin` *(Note: During the very first DB initialization, the password might be `password`, but it resets to `admin` upon API restart)*
 
 ### Manager (Gas Station Management)
-*   **Username:** `manager`
-*   **Password:** `password`
+*   **Username:** `manager1 or 2 or 3....12`
+*   **Password:** `manager`
 
 ### Client (Test Customer)
 *   **Phone Number:** `+48000000003`
