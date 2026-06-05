@@ -198,6 +198,49 @@ namespace PetrolAPI.Controllers
             return Ok(new { message = "Price updated", newPrice = fuelType.Price });
         }
 
+        [HttpGet("fueltypes")]
+        public async Task<IActionResult> GetFuelTypes()
+        {
+            var fuelTypes = await _context.FuelTypes.Where(f => !f.IsDeleted).ToListAsync();
+            return Ok(fuelTypes.Select(f => new { f.Id, f.Name, f.Price }));
+        }
+
+        public class CreateFuelTypeRequest
+        {
+            public string Name { get; set; } = default!;
+            public double Price { get; set; }
+        }
+
+        [HttpPost("fueltypes")]
+        public async Task<IActionResult> CreateFuelType([FromBody] CreateFuelTypeRequest request)
+        {
+            if (string.IsNullOrWhiteSpace(request.Name)) return BadRequest(new { message = "Name is required" });
+            if (request.Price < 0) return BadRequest(new { message = "Price cannot be negative" });
+
+            var fuelType = new FuelType
+            {
+                Name = request.Name,
+                Price = request.Price
+            };
+
+            _context.FuelTypes.Add(fuelType);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { fuelType.Id, fuelType.Name, fuelType.Price });
+        }
+
+        [HttpDelete("fueltypes/{id}")]
+        public async Task<IActionResult> DeleteFuelType(int id)
+        {
+            var fuelType = await _context.FuelTypes.FindAsync(id);
+            if (fuelType == null) return NotFound(new { message = "Fuel type not found" });
+
+            fuelType.IsDeleted = true;
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Fuel type deleted successfully" });
+        }
+
         // --- USERS CRUD ---
 
         public class UserDTO

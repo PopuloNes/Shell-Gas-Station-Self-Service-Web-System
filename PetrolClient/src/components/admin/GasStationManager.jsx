@@ -72,10 +72,10 @@ const GasStationManager = ({ onInspect }) => {
     };
 
     const handleToggleAll = async (status) => {
-        if (!window.confirm(`Are you sure you want to turn ${status === 2 ? 'ON' : 'OFF'} all pumps across all stations?`)) return;
+        if (!window.confirm(`Are you sure you want to turn ${status === 0 ? 'ON' : 'OFF'} all pumps across all stations?`)) return;
         try {
             await adminService.toggleAllPumps(status);
-            alert(`All pumps turned ${status === 2 ? 'ON' : 'OFF'} successfully.`);
+            alert(`All pumps turned ${status === 0 ? 'ON' : 'OFF'} successfully.`);
         } catch (error) {
             console.error('Failed to toggle all pumps', error);
             alert('Error toggling pumps');
@@ -89,8 +89,8 @@ const GasStationManager = ({ onInspect }) => {
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <h2>Gas Stations Management</h2>
                 <div>
-                    <button className="btn btn-success fw-bold text-white me-2" onClick={() => handleToggleAll(2)}>Turn On All Pumps</button>
-                    <button className="btn btn-danger fw-bold text-white" onClick={() => handleToggleAll(0)}>Turn Off All Pumps</button>
+                    <button className="btn btn-success fw-bold text-white me-2" onClick={() => handleToggleAll(0)}>Turn On All Pumps</button>
+                    <button className="btn btn-danger fw-bold text-white" onClick={() => handleToggleAll(2)}>Turn Off All Pumps</button>
                 </div>
             </div>
             <div className="form-container">

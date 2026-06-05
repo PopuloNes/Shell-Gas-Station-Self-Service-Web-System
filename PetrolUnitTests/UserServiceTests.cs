@@ -1,4 +1,4 @@
-﻿using gsst.Interfaces;
+using gsst.Interfaces;
 using gsst.Model.User;
 using gsst.Services;
 using Microsoft.EntityFrameworkCore;
@@ -36,7 +36,7 @@ namespace GsstUnitTests
             string password = "TestPassword";
             string fullName = "TestFullName";
             string username = "TestUsername";
-            string role = "Cashier";
+            string role = "Client";
 
             //Act
             var result = _userService.CreateUser(fullName, username, password, role);
@@ -51,16 +51,16 @@ namespace GsstUnitTests
 
         [TestMethod]
         [DoNotParallelize]
-        [DataRow("TestFullName", "TestUsername", "", "Cashier")]
-        [DataRow("", "TestUsername", "TestPassword", "Cashier")]
-        [DataRow("TestFullName", "", "TestPassword", "Cashier")]
+        [DataRow("TestFullName", "TestUsername", "", "Client")]
+        [DataRow("", "TestUsername", "TestPassword", "Client")]
+        [DataRow("TestFullName", "", "TestPassword", "Client")]
         [DataRow("TestFullName", "TestUsername", "TestPassword", "")]
         [DataRow("TestFullName", "TestUsername", "TestPassword", "TestRole")]
-        [DataRow("Te", "TestUsername", "TestPassword", "Cashier")]
-        [DataRow("TestFullName", "Te", "TestPassword", "Cashier")]
-        [DataRow("TestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFulTestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNamelNameestFullNameestFullName", "TestUsername", "Te", "Cashier")]
-        [DataRow("TestFullName", "TestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameTestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullName", "TestPassword", "Cashier")]
-        [DataRow("TestFullName", "TestUsername", "TestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFuTestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNamellNameestFullNameestFullNameestFullName", "Cashier")]
+        [DataRow("Te", "TestUsername", "TestPassword", "Client")]
+        [DataRow("TestFullName", "Te", "TestPassword", "Client")]
+        [DataRow("TestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFulTestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNamelNameestFullNameestFullName", "TestUsername", "Te", "Client")]
+        [DataRow("TestFullName", "TestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameTestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullName", "TestPassword", "Client")]
+        [DataRow("TestFullName", "TestUsername", "TestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFuTestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNameestFullNamellNameestFullNameestFullNameestFullName", "Client")]
         public void AddUserIncorrect(string fullName, string username, string password, string role)
         {
             //Act & Assert
@@ -75,7 +75,7 @@ namespace GsstUnitTests
             string password = "TestPassword";
             string fullName = "TestFullName";
             string username = "TestUsername";
-            string role = "Cashier";
+            string role = "Client";
             _userService.CreateUser(fullName, username, password, role);
 
             //Act & Assert
@@ -90,7 +90,7 @@ namespace GsstUnitTests
             string password = "TestPassword";
             string fullName = "TestFullName";
             string username = "TestUsername";
-            string role = "Cashier";
+            string role = "Client";
             _userService.CreateUser(fullName, username, password, role);
 
             //Act
@@ -109,7 +109,7 @@ namespace GsstUnitTests
             string password = "TestPassword";
             string fullName = "TestFullName";
             string username = "TestUsername";
-            string role = "Cashier";
+            string role = "Client";
             var user = _userService.CreateUser(fullName, username, password, role);
 
             //Act
@@ -139,7 +139,7 @@ namespace GsstUnitTests
             string password = "TestPassword";
             string fullName = "TestFullName";
             string username = "TestUsername";
-            string role = "Cashier";
+            string role = "Client";
             var user = _userService.CreateUser(fullName, username, password, role);
 
             //Act
@@ -165,7 +165,7 @@ namespace GsstUnitTests
             string password = "TestPassword";
             string fullName = "TestFullName";
             string username = "TestUsername";
-            string role = "Cashier";
+            string role = "Client";
             var user = _userService.CreateUser(fullName, username, password, role);
 
             //Act

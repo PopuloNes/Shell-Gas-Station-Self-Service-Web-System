@@ -127,7 +127,6 @@ const UserManager = () => {
                         <option value="Client">Client</option>
                         <option value="Manager">Manager</option>
                         <option value="Admin">Admin</option>
-                        <option value="Cashier">Cashier</option>
                     </select>
 
                     <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} placeholder="Phone Number" />

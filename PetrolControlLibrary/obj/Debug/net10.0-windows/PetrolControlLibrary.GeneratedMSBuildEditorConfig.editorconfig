@@ -1,5 +1,4 @@
 is_global = true
-build_property.IsMSTestTestAdapterReferenced = true
 build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
 build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
 build_property.CsWinRTComponent = 

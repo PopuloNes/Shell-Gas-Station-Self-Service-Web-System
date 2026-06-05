@@ -1666,7 +1666,7 @@ namespace Petrol.Migrations
                             Id = 2,
                             FullName = "Олексій Романенко",
                             Password = "cashier",
-                            Role = "Cashier",
+                            Role = "Client",
                             Username = "cashier"
                         },
                         new

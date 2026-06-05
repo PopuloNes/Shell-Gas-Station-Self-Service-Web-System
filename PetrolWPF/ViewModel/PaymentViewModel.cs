@@ -267,7 +267,7 @@ namespace Gsstwpfmock.ViewModel
                     details = $"Wallet: {CryptoAddress}";
                 }
 
-                if (SaveNewMethod && ClientUser != null)
+                if (SaveNewMethod && ClientUser != null && type != "Blik")
                 {
                     var saved = _paymentService.AddPaymentMethod(ClientUser.Id, type, details, !SavedPaymentMethods.Any());
                     finalPaymentDetails = $"{saved.Type}: {saved.Details}";

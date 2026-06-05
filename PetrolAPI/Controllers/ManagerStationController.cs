@@ -75,6 +75,62 @@ namespace PetrolAPI.Controllers
             return Ok(dto);
         }
 
+        [HttpGet("available-fuel-types")]
+        public async Task<IActionResult> GetAvailableFuelTypes()
+        {
+            var stationId = GetManagerGasStationId();
+            if (stationId == null) return Unauthorized();
+
+            var stationTankFuelTypeIds = await _context.Tanks
+                .Where(t => t.GasStationId == stationId && t.FuelType != null)
+                .Select(t => t.FuelType.Id)
+                .ToListAsync();
+
+            var availableFuels = await _context.FuelTypes
+                .Where(f => !f.IsDeleted && !stationTankFuelTypeIds.Contains(f.Id))
+                .Select(f => new
+                {
+                    Id = f.Id,
+                    Name = f.Name,
+                    Price = f.Price
+                })
+                .ToListAsync();
+
+            return Ok(availableFuels);
+        }
+
+        public class NewTankRequest
+        {
+            public int FuelTypeId { get; set; }
+        }
+
+        [HttpPost("tanks")]
+        public async Task<IActionResult> AddTank([FromBody] NewTankRequest request)
+        {
+            var stationId = GetManagerGasStationId();
+            if (stationId == null) return Unauthorized();
+
+            var fuelType = await _context.FuelTypes.FindAsync(request.FuelTypeId);
+            if (fuelType == null || fuelType.IsDeleted) return NotFound(new { message = "Fuel type not found." });
+
+            var existingTank = await _context.Tanks
+                .AnyAsync(t => t.GasStationId == stationId && t.FuelType != null && t.FuelType.Id == request.FuelTypeId);
+            if (existingTank) return BadRequest(new { message = "Station already has a tank for this fuel type." });
+
+            var tank = new Tank
+            {
+                GasStationId = stationId.Value,
+                FuelType = fuelType,
+                Capacity = 50000,
+                Volume = 0
+            };
+
+            _context.Tanks.Add(tank);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tank added successfully.", tankId = tank.Id });
+        }
+
         public class ReplenishRequest
         {
             public double Amount { get; set; }
@@ -86,7 +142,9 @@ namespace PetrolAPI.Controllers
             var stationId = GetManagerGasStationId();
             if (stationId == null) return Unauthorized();
 
-            var tank = await _context.Tanks.FirstOrDefaultAsync(t => t.Id == id && t.GasStationId == stationId);
+            var tank = await _context.Tanks
+                .Include(t => t.FuelType)
+                .FirstOrDefaultAsync(t => t.Id == id && t.GasStationId == stationId);
             if (tank == null) return NotFound(new { message = "Tank not found in your station." });
 
             if (request.Amount <= 0) return BadRequest(new { message = "Amount must be positive." });
@@ -101,6 +159,72 @@ namespace PetrolAPI.Controllers
             {
                 return BadRequest(new { message = ex.Message });
             }
+        }
+
+        [HttpDelete("tanks/{id}")]
+        public async Task<IActionResult> DeleteTank(int id)
+        {
+            var stationId = GetManagerGasStationId();
+            if (stationId == null) return Unauthorized();
+
+            var tank = await _context.Tanks
+                .Include(t => t.ConnectedPumps)
+                .FirstOrDefaultAsync(t => t.Id == id && t.GasStationId == stationId);
+                
+            if (tank == null) return NotFound(new { message = "Tank not found in your station." });
+
+            tank.ConnectedPumps.Clear();
+            _context.Tanks.Remove(tank);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tank deleted successfully." });
+        }
+
+        [HttpPost("tanks/{id}/pumps")]
+        public async Task<IActionResult> LinkTankToAllPumps(int id)
+        {
+            var stationId = GetManagerGasStationId();
+            if (stationId == null) return Unauthorized();
+
+            var tank = await _context.Tanks
+                .Include(t => t.ConnectedPumps)
+                .FirstOrDefaultAsync(t => t.Id == id && t.GasStationId == stationId);
+
+            if (tank == null) return NotFound(new { message = "Tank not found in your station." });
+
+            // Only link to active pumps (not Disabled)
+            var pumps = await _context.Pumps
+                .Where(p => p.GasStationId == stationId && p.Status != PumpStatus.Disabled)
+                .ToListAsync();
+
+            foreach (var pump in pumps)
+            {
+                if (!tank.ConnectedPumps.Any(p => p.Id == pump.Id))
+                {
+                    tank.ConnectedPumps.Add(pump);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Tank linked to all active pumps." });
+        }
+
+        [HttpDelete("tanks/{id}/pumps")]
+        public async Task<IActionResult> UnlinkTankFromAllPumps(int id)
+        {
+            var stationId = GetManagerGasStationId();
+            if (stationId == null) return Unauthorized();
+
+            var tank = await _context.Tanks
+                .Include(t => t.ConnectedPumps)
+                .FirstOrDefaultAsync(t => t.Id == id && t.GasStationId == stationId);
+
+            if (tank == null) return NotFound(new { message = "Tank not found in your station." });
+
+            tank.ConnectedPumps.Clear();
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tank unlinked from all pumps." });
         }
 
         public class PumpStatusRequest

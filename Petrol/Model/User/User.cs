@@ -9,7 +9,7 @@ namespace gsst.Model.User
 {
     public class User
     {
-        private string _role = UserRoles.Cashier;
+        private string _role = UserRoles.Client;
         private string _fullName = null!;
         private string _username = null!;
         private string _password = null!;
@@ -73,9 +73,9 @@ namespace gsst.Model.User
             get { return _role; }
             set 
             {
-                if (value != UserRoles.Admin && value != UserRoles.Cashier && value != UserRoles.Manager && value != UserRoles.Client)
+                if (value != UserRoles.Admin && value != UserRoles.Manager && value != UserRoles.Client)
                 {
-                    throw new ArgumentException($"Role must be either '{UserRoles.Admin}', '{UserRoles.Cashier}', '{UserRoles.Manager}' or '{UserRoles.Client}'");
+                    throw new ArgumentException($"Role must be either '{UserRoles.Admin}', '{UserRoles.Manager}' or '{UserRoles.Client}'");
                 }
                 _role = value;
             } 

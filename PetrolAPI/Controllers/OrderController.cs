@@ -44,7 +44,7 @@ namespace PetrolAPI.Controllers
                 TotalPaid = o.Total,
                 BonusesEarned = o.AccruedBonuses,
                 BonusSpent = o.BonusSpent,
-                PaymentMethod = string.IsNullOrEmpty(o.PaymentCardNumber) ? "Other" : $"Card (***{(o.PaymentCardNumber.Length >= 4 ? o.PaymentCardNumber[^4..] : o.PaymentCardNumber)})",
+                PaymentMethod = string.IsNullOrEmpty(o.PaymentCardNumber) ? "Other" : (o.PaymentCardNumber.StartsWith("Visa") ? $"Card (***{(o.PaymentCardNumber.Length >= 4 ? o.PaymentCardNumber[^4..] : o.PaymentCardNumber)})" : o.PaymentCardNumber),
                 GasStationId = o.GasStationId,
                 Volume = o.Items.FirstOrDefault()?.Quantity ?? 0,
                 FuelName = o.Items.FirstOrDefault()?.Product?.Name ?? "Unknown",

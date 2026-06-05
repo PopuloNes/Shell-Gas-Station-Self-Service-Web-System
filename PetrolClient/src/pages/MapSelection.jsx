@@ -87,7 +87,7 @@ const MapSelection = () => {
                                                 <strong className="d-block mb-2 small text-dark">Available Fuels:</strong>
                                                 <ul className="list-unstyled m-0 small">
                                                     {station.availableFuels.map(f => {
-                                                        const isAvailable = f.pumpIds && station.pumps?.some(p => p.status === 2 && f.pumpIds.includes(p.id));
+                                                        const isAvailable = f.pumpIds && station.pumps?.some(p => p.status !== 2 && f.pumpIds.includes(p.id));
                                                         return (
                                                             <li key={f.fuelTypeId} className={`d-flex justify-content-between mb-1 ${!isAvailable ? 'text-muted text-decoration-line-through' : 'text-dark fw-bold'}`}>
                                                                 <span>{f.fuelName}</span>

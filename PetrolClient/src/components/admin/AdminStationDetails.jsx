@@ -23,21 +23,6 @@ const AdminStationDetails = ({ stationId, onBack }) => {
         }
     }, [stationId]);
 
-    const handlePriceChange = async (fuelId, newPrice) => {
-        const parsedPrice = parseFloat(newPrice);
-        if (isNaN(parsedPrice) || parsedPrice < 0) {
-            alert('Invalid price');
-            return;
-        }
-        try {
-            await adminService.updateFuelPrice(fuelId, parsedPrice);
-            fetchDetails(); // Refresh
-        } catch (error) {
-            console.error('Failed to update price', error);
-            alert('Failed to update price');
-        }
-    };
-
     if (loading) return <div>Loading Station Details...</div>;
     if (!station) return <div>Station not found.</div>;
 
@@ -69,11 +54,11 @@ const AdminStationDetails = ({ stationId, onBack }) => {
                                                 <td className="fw-bold">{p.name}</td>
                                                 <td>
                                                     <span className={`badge ${
-                                                        p.status === 2 ? 'bg-success' : 
-                                                        p.status === 3 ? 'bg-warning text-dark' : 
+                                                        p.status === 0 ? 'bg-success' : 
+                                                        p.status === 1 ? 'bg-warning text-dark' : 
                                                         'bg-danger'
                                                     } fs-6`}>
-                                                        {p.status === 0 ? 'Disabled' : p.status === 1 ? 'Maintenance' : p.status === 2 ? 'Free' : 'Busy'}
+                                                        {p.status === 0 ? 'Free' : p.status === 1 ? 'Busy' : p.status === 2 ? 'Disabled' : 'Unknown'}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -108,17 +93,7 @@ const AdminStationDetails = ({ stationId, onBack }) => {
                                                 <td>{f.availableVolume.toFixed(2)}</td>
                                                 <td className="fw-bold text-success">${f.price.toFixed(2)}</td>
                                                 <td>
-                                                    <button 
-                                                        className="btn btn-outline-warning btn-sm fw-bold text-dark"
-                                                        onClick={() => {
-                                                            const newPrice = prompt(`Enter new price for ${f.fuelName}:`, f.price);
-                                                            if (newPrice !== null) {
-                                                                handlePriceChange(f.fuelTypeId, newPrice);
-                                                            }
-                                                        }}
-                                                    >
-                                                        Adjust Price
-                                                    </button>
+                                                    <span className="text-muted small">Managed Globally</span>
                                                 </td>
                                             </tr>
                                         ))}

@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PetrolUnitTests\PetrolUnitTests.csproj" />
     <ProjectReference Include="..\Petrol\Petrol.csproj" />
   </ItemGroup>
 

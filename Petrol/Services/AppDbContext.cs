@@ -47,8 +47,7 @@ namespace gsst.Services
             modelBuilder.Entity<User>().HasIndex(u => u.Username).IsUnique();
 
             modelBuilder.Entity<User>().HasData(
-                new User { Id = 1, FullName = "Михайло Стадніков", Username = "admin", Password = "admin", PhoneNumber = "+48000000001", Role = UserRoles.Admin },
-                new User { Id = 2, FullName = "Олексій Романенко", Username = "cashier", Password = "cashier", Role = UserRoles.Cashier },
+                new User { Id = 1, FullName = "admin", Username = "admin", Password = "admin", PhoneNumber = "+48000000001", Role = UserRoles.Admin },
                 new User { Id = 3, FullName = "Manager Station 1", Username = "manager1", Password = "manager", Role = UserRoles.Manager, GasStationId = 1 },
                 new User { Id = 4, FullName = "Manager Station 2", Username = "manager2", Password = "manager", Role = UserRoles.Manager, GasStationId = 2 },
                 new User { Id = 5, FullName = "Manager Station 3", Username = "manager3", Password = "manager", Role = UserRoles.Manager, GasStationId = 3 },

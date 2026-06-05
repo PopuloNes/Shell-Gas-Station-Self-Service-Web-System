@@ -4,6 +4,7 @@ import GasStationManager from '../components/admin/GasStationManager';
 import UserManager from '../components/admin/UserManager';
 import GlobalStatistics from '../components/admin/GlobalStatistics';
 import AdminStationDetails from '../components/admin/AdminStationDetails';
+import FuelTypeManager from '../components/admin/FuelTypeManager';
 import logoImg from '../assets/logo.png';
 import textLogoImg from '../assets/text_logo.jpg';
 import './AdminDashboard.css'; 
@@ -30,6 +31,7 @@ const AdminDashboard = () => {
         }
         
         switch (activeTab) {
+            case 'fueltypes': return <FuelTypeManager />;
             case 'users': return <UserManager />;
             case 'statistics': return <GlobalStatistics />;
             default: return <GasStationManager onInspect={handleInspect} />;
@@ -50,6 +52,12 @@ const AdminDashboard = () => {
                         onClick={() => { setActiveTab('stations'); setInspectStationId(null); }}
                     >
                         Gas Stations
+                    </button>
+                    <button 
+                        className={`nav-btn ${activeTab === 'fueltypes' ? 'active' : ''}`}
+                        onClick={() => { setActiveTab('fueltypes'); setInspectStationId(null); }}
+                    >
+                        Fuel Types
                     </button>
                     <button 
                         className={`nav-btn ${activeTab === 'users' ? 'active' : ''}`}

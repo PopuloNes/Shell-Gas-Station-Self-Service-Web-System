@@ -57,12 +57,12 @@ const ClientDashboard = () => {
             const res = await api.get(`/PaymentMethod/user/${user.id}`);
             setSavedMethods(res.data);
             if (res.data.length > 0) {
-                setIsAddingNew(false);
                 const def = res.data.find(m => m.isDefault) || res.data[0];
                 setSelectedMethodId(def.id);
             } else {
-                setIsAddingNew(true);
+                setSelectedMethodId('blik_option');
             }
+            setIsAddingNew(false);
         } catch (err) {
             console.error("Failed to load payment methods", err);
         }
@@ -144,10 +144,6 @@ const ClientDashboard = () => {
                     if (cardCVC.length < 3) return alert('Invalid CVC');
                     type = "Visa/Mastercard";
                     details = `**** **** **** ${rawCard.slice(-4)} (Exp: ${cardExpiry})`;
-                } else if (paymentTab === 'blik') {
-                    if (blikCode.length !== 6) return alert('Blik code must be exactly 6 digits');
-                    type = "Blik";
-                    details = `Code: ${blikCode}`;
                 } else if (paymentTab === 'crypto') {
                     if (!cryptoAddress || cryptoAddress.length < 26) return alert('Crypto wallet address must be at least 26 characters long');
                     type = "Crypto";
@@ -166,9 +162,14 @@ const ClientDashboard = () => {
                     finalCardStr = `${type}: ${details}`;
                 }
             } else {
-                const sel = savedMethods.find(m => m.id === selectedMethodId);
-                if (!sel) return alert('Select a method');
-                finalCardStr = `${sel.type}: ${sel.details}`;
+                if (selectedMethodId === 'blik_option') {
+                    if (blikCode.length !== 6) return alert('Blik code must be exactly 6 digits');
+                    finalCardStr = `Blik: Code: ${blikCode}`;
+                } else {
+                    const sel = savedMethods.find(m => m.id === selectedMethodId);
+                    if (!sel) return alert('Select a method');
+                    finalCardStr = `${sel.type}: ${sel.details}`;
+                }
             }
 
             const req = {
@@ -280,8 +281,8 @@ const ClientDashboard = () => {
                             >
                                 <option value="">-- Choose Pump --</option>
                                 {station.pumps?.map(p => (
-                                    <option key={p.id} value={p.id} disabled={p.status !== 2}>
-                                        {p.name} {p.status !== 2 ? '(Closed)' : ''}
+                                    <option key={p.id} value={p.id} disabled={p.status === 2}>
+                                        {p.name} {p.status === 2 ? '(Closed)' : ''}
                                     </option>
                                 ))}
                             </select>
@@ -298,7 +299,7 @@ const ClientDashboard = () => {
                             >
                                 <option value="">-- Choose Fuel --</option>
                                 {station.availableFuels?.filter(f => !selectedPumpId || f.pumpIds?.includes(parseInt(selectedPumpId))).map(f => {
-                                    const isAvailable = f.pumpIds && station.pumps?.some(p => p.status === 2 && f.pumpIds.includes(p.id));
+                                    const isAvailable = f.pumpIds && station.pumps?.some(p => p.status !== 2 && f.pumpIds.includes(p.id));
                                     return (
                                         <option key={f.fuelTypeId} value={f.fuelTypeId} disabled={!isAvailable}>
                                             {f.fuelName} - {isAvailable ? `${f.price} PLN/L (Available: ${f.availableVolume} L)` : 'Not Available'}
@@ -373,6 +374,38 @@ const ClientDashboard = () => {
                             </div>
                         )}
 
+                        {(() => {
+                            const selectedFuel = station.availableFuels?.find(f => f.fuelTypeId == selectedFuelId);
+                            const price = selectedFuel ? selectedFuel.price : 0;
+                            const val = parseFloat(inputValue) || 0;
+                            if (price > 0 && val > 0) {
+                                let volume = 0;
+                                let cost = 0;
+                                if (isVolumeMode) {
+                                    volume = val;
+                                    cost = val * price;
+                                } else {
+                                    cost = val;
+                                    volume = val / price;
+                                }
+                                let discount = useBonuses ? (parseInt(bonusesToSpend) || 0) : 0;
+                                let finalCost = Math.max(0, cost - discount);
+
+                                return (
+                                    <div className="alert alert-info shadow-sm">
+                                        <h5 className="alert-heading fw-bold">Order Summary</h5>
+                                        <p className="mb-1"><strong>Fuel Price:</strong> {price.toFixed(2)} PLN/L</p>
+                                        <p className="mb-1"><strong>Volume:</strong> {volume.toFixed(2)} L</p>
+                                        <p className="mb-1"><strong>Cost:</strong> {cost.toFixed(2)} PLN</p>
+                                        {discount > 0 && <p className="mb-1 text-danger"><strong>Discount:</strong> -{discount.toFixed(2)} PLN</p>}
+                                        <hr className="my-2" />
+                                        <p className="mb-0 fs-5"><strong>Total to Pay:</strong> <span className="text-dark fw-bold">{finalCost.toFixed(2)} PLN</span></p>
+                                    </div>
+                                );
+                            }
+                            return null;
+                        })()}
+
                         <button type="submit" className="btn btn-danger btn-lg mt-3 fw-bold w-100 shadow-sm">
                             Checkout
                         </button>
@@ -383,82 +416,87 @@ const ClientDashboard = () => {
             {/* STRIPE-LIKE PAYMENT MODAL */}
             {showCheckout && (
                 <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000 }}>
-                    <div className="card shadow-lg border-0" style={{ width: '95%', maxWidth: '1200px', maxHeight: '90vh', overflowY: 'auto', padding: '40px' }}>
-                        <h2 className="text-dark fw-bold text-center mb-4" style={{ fontSize: '2.5rem' }}>Secure Payment</h2>
+                    <div className="card shadow-lg border-0" style={{ width: '95%', maxWidth: '500px', maxHeight: '90vh', overflowY: 'auto', padding: '24px' }}>
+                        <h2 className="text-dark fw-bold text-center mb-3" style={{ fontSize: '1.8rem' }}>Secure Payment</h2>
                         
                         {/* Toggles */}
-                        {savedMethods.length > 0 && (
-                            <div className="d-flex mb-4 gap-3">
-                                <button className={`btn flex-fill fs-5 fw-bold py-3 ${!isAddingNew ? 'btn-danger text-white shadow-sm' : 'btn-outline-danger'}`} onClick={() => setIsAddingNew(false)}>Saved Methods</button>
-                                <button className={`btn flex-fill fs-5 fw-bold py-3 ${isAddingNew ? 'btn-danger text-white shadow-sm' : 'btn-outline-danger'}`} onClick={() => setIsAddingNew(true)}>Add New</button>
-                            </div>
-                        )}
+                        <div className="d-flex mb-3 gap-2">
+                            <button className={`btn flex-fill fw-bold py-2 ${!isAddingNew ? 'btn-danger text-white shadow-sm' : 'btn-outline-danger'}`} onClick={() => setIsAddingNew(false)}>Select Payment</button>
+                            <button className={`btn flex-fill fw-bold py-2 ${isAddingNew ? 'btn-danger text-white shadow-sm' : 'btn-outline-danger'}`} onClick={() => { setIsAddingNew(true); setPaymentTab('card'); }}>Add Card/Crypto</button>
+                        </div>
 
-                        {!isAddingNew && savedMethods.length > 0 && (
+                        {!isAddingNew && (
                             <div className="mb-4">
-                                <label className="form-label text-muted fw-bold fs-5 mb-3">Select Payment Method</label>
+                                <label className="form-label text-muted fw-bold fs-5 mb-3">Choose Payment Method</label>
+                                
+                                {/* Saved Methods */}
                                 {savedMethods.map(m => (
                                     <div key={m.id} 
-                                        className={`d-flex align-items-center justify-content-between p-4 border rounded mb-3 ${selectedMethodId === m.id ? 'border-danger bg-danger bg-opacity-10 shadow-sm' : 'bg-light'}`}
+                                        className={`d-flex align-items-center justify-content-between p-3 border rounded mb-2 ${selectedMethodId === m.id ? 'border-danger bg-danger bg-opacity-10 shadow-sm' : 'bg-light'}`}
                                         style={{ cursor: 'pointer', transition: 'all 0.2s' }}
                                         onClick={() => setSelectedMethodId(m.id)}>
                                         <div>
-                                            <div className="fw-bold text-dark fs-4 mb-1">{m.type}</div>
-                                            <div className="text-muted fs-5">{m.details}</div>
+                                            <div className="fw-bold text-dark fs-5 mb-1">{m.type}</div>
+                                            <div className="text-muted">{m.details}</div>
                                         </div>
-                                        <button className="btn btn-outline-danger btn-lg fw-bold" onClick={(e) => { e.stopPropagation(); handleDeleteMethod(m.id); }}>Delete</button>
+                                        <button className="btn btn-outline-danger fw-bold btn-sm" onClick={(e) => { e.stopPropagation(); handleDeleteMethod(m.id); }}>Delete</button>
                                     </div>
                                 ))}
+
+                                {/* Blik Option */}
+                                <div 
+                                    className={`p-3 border rounded mb-2 ${selectedMethodId === 'blik_option' ? 'border-danger bg-danger bg-opacity-10 shadow-sm' : 'bg-light'}`}
+                                    style={{ cursor: 'pointer', transition: 'all 0.2s' }}
+                                    onClick={() => setSelectedMethodId('blik_option')}>
+                                    <div className="fw-bold text-dark fs-5 mb-2">Blik (One-Time Code)</div>
+                                    {selectedMethodId === 'blik_option' && (
+                                        <div className="mt-2" onClick={e => e.stopPropagation()}>
+                                            <input type="text" placeholder="000 000" value={blikCode} onChange={e => setBlikCode(e.target.value.replace(/\D/g, ''))} maxLength={6} className="form-control fs-3 text-center py-2 bg-white fw-bold text-dark shadow-sm border border-danger" style={{ letterSpacing: '8px' }} />
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         )}
 
                         {isAddingNew && (
                             <div className="mb-4">
-                                <div className="d-flex border-bottom mb-4">
-                                    <button onClick={() => setPaymentTab('card')} className={`btn flex-fill fs-4 fw-bold p-3 rounded-0 ${paymentTab === 'card' ? 'text-danger border-danger border-bottom border-3' : 'text-muted border-0'}`}>Card</button>
-                                    <button onClick={() => setPaymentTab('blik')} className={`btn flex-fill fs-4 fw-bold p-3 rounded-0 ${paymentTab === 'blik' ? 'text-danger border-danger border-bottom border-3' : 'text-muted border-0'}`}>Blik</button>
-                                    <button onClick={() => setPaymentTab('crypto')} className={`btn flex-fill fs-4 fw-bold p-3 rounded-0 ${paymentTab === 'crypto' ? 'text-danger border-danger border-bottom border-3' : 'text-muted border-0'}`}>Crypto</button>
+                                <div className="d-flex border-bottom mb-3">
+                                    <button onClick={() => setPaymentTab('card')} className={`btn flex-fill fs-6 fw-bold p-2 rounded-0 ${paymentTab === 'card' ? 'text-danger border-danger border-bottom border-3' : 'text-muted border-0'}`}>Card</button>
+                                    <button onClick={() => setPaymentTab('crypto')} className={`btn flex-fill fs-6 fw-bold p-2 rounded-0 ${paymentTab === 'crypto' ? 'text-danger border-danger border-bottom border-3' : 'text-muted border-0'}`}>Crypto</button>
                                 </div>
 
                                 {paymentTab === 'card' && (
                                     <div>
-                                        <label className="form-label text-muted fw-bold fs-5 mb-2">Card Information</label>
+                                        <label className="form-label text-muted fw-bold mb-2">Card Information</label>
                                         <div className="border rounded bg-light p-2 shadow-sm">
-                                            <input type="text" placeholder="Card Number" value={paymentCardNumber} onChange={handleCardNumberChange} maxLength={19} className="form-control fs-4 border-0 border-bottom border-secondary border-opacity-25 bg-transparent mb-2 p-3 shadow-none text-dark" />
+                                            <input type="text" placeholder="Card Number" value={paymentCardNumber} onChange={handleCardNumberChange} maxLength={19} className="form-control border-0 border-bottom border-secondary border-opacity-25 bg-transparent mb-2 p-2 shadow-none text-dark" />
                                             <div className="d-flex">
-                                                <input type="text" placeholder="MM/YY" value={cardExpiry} onChange={handleExpiryChange} maxLength={5} className="form-control fs-4 border-0 border-end border-secondary border-opacity-25 bg-transparent p-3 shadow-none text-dark" />
-                                                <input type="text" placeholder="CVC" value={cardCVC} onChange={e => setCardCVC(e.target.value.replace(/\D/g, ''))} maxLength={3} className="form-control fs-4 border-0 bg-transparent p-3 shadow-none text-dark" />
+                                                <input type="text" placeholder="MM/YY" value={cardExpiry} onChange={handleExpiryChange} maxLength={5} className="form-control border-0 border-end border-secondary border-opacity-25 bg-transparent p-2 shadow-none text-dark" />
+                                                <input type="text" placeholder="CVC" value={cardCVC} onChange={e => setCardCVC(e.target.value.replace(/\D/g, ''))} maxLength={3} className="form-control border-0 bg-transparent p-2 shadow-none text-dark" />
                                             </div>
                                         </div>
                                     </div>
                                 )}
 
-                                {paymentTab === 'blik' && (
-                                    <div>
-                                        <label className="form-label text-muted fw-bold fs-5 mb-2">6-Digit Blik Code</label>
-                                        <input type="text" placeholder="000 000" value={blikCode} onChange={e => setBlikCode(e.target.value.replace(/\D/g, ''))} maxLength={6} className="form-control fs-1 text-center py-4 bg-light fw-bold text-dark shadow-sm border" style={{ letterSpacing: '16px' }} />
-                                    </div>
-                                )}
-
                                 {paymentTab === 'crypto' && (
                                     <div>
-                                        <label className="form-label text-muted fw-bold fs-5 mb-2">Wallet Address</label>
-                                        <input type="text" placeholder="0x..." value={cryptoAddress} onChange={e => setCryptoAddress(e.target.value)} className="form-control fs-4 py-4 bg-light text-dark shadow-sm border" />
+                                        <label className="form-label text-muted fw-bold mb-2">Wallet Address</label>
+                                        <input type="text" placeholder="0x..." value={cryptoAddress} onChange={e => setCryptoAddress(e.target.value)} className="form-control py-2 bg-light text-dark shadow-sm border" />
                                     </div>
                                 )}
 
-                                {user && paymentTab !== 'blik' && (
-                                    <label className="form-check d-flex align-items-center mt-4 fs-5 text-muted cursor-pointer" style={{ cursor: 'pointer' }}>
-                                        <input className="form-check-input me-3 shadow-sm border-secondary" type="checkbox" checked={saveNewMethod} onChange={e => setSaveNewMethod(e.target.checked)} style={{ width: '28px', height: '28px' }} />
-                                        <span className="fw-bold ms-2">Save this method for future purchases</span>
+                                {user && (
+                                    <label className="form-check d-flex align-items-center mt-3 text-muted cursor-pointer" style={{ cursor: 'pointer' }}>
+                                        <input className="form-check-input me-2 shadow-sm border-secondary" type="checkbox" checked={saveNewMethod} onChange={e => setSaveNewMethod(e.target.checked)} style={{ width: '20px', height: '20px' }} />
+                                        <span className="fw-bold ms-1">Save this method for future purchases</span>
                                     </label>
                                 )}
                             </div>
                         )}
 
-                        <div className="d-flex gap-4 mt-5">
-                            <button className="btn btn-outline-secondary fs-4 fw-bold py-3 flex-fill" onClick={() => setShowCheckout(false)}>Cancel</button>
-                            <button className="btn btn-warning fs-4 fw-bold py-3 text-dark flex-fill shadow-sm" onClick={handleProcessOrder}>Pay Now</button>
+                        <div className="d-flex gap-3 mt-4">
+                            <button className="btn btn-outline-secondary fw-bold py-2 flex-fill" onClick={() => setShowCheckout(false)}>Cancel</button>
+                            <button className="btn btn-warning fw-bold py-2 text-dark flex-fill shadow-sm" onClick={handleProcessOrder}>Pay Now</button>
                         </div>
                     </div>
                 </div>
@@ -467,28 +505,28 @@ const ClientDashboard = () => {
             {/* Success Summary Popup */}
             {orderSummary && (
                 <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 1000 }}>
-                    <div className="card shadow-lg border-0" style={{ width: '95%', maxWidth: '1000px', padding: '48px', maxHeight: '90vh', overflowY: 'auto' }}>
+                    <div className="card shadow-lg border-0" style={{ width: '95%', maxWidth: '500px', padding: '24px', maxHeight: '90vh', overflowY: 'auto' }}>
                         {!pumpStarted ? (
                             <>
-                                <h2 className="text-success text-center mb-5 fw-bold" style={{ fontSize: '3rem' }}>Płatność zakończona sukcesem!</h2>
-                                <div className="bg-light p-5 rounded mb-5 shadow-sm border">
-                                    <h3 className="mb-4 fs-3 fw-bold border-bottom border-2 pb-3 text-dark">Podsumowanie zamówienia</h3>
-                                    <div className="d-flex justify-content-between mb-4 fs-4"><span className="text-muted fw-bold">Paliwo:</span> <strong className="text-dark fs-3">{orderSummary.fuelName}</strong></div>
-                                    <div className="d-flex justify-content-between mb-4 fs-4"><span className="text-muted fw-bold">Ilość:</span> <strong className="text-dark fs-3">{orderSummary.volume} L</strong></div>
-                                    <div className="d-flex justify-content-between mb-4 fs-4"><span className="text-muted fw-bold">Suma częściowa:</span> <strong className="text-dark fs-3">{orderSummary.amountBeforeDiscount} PLN</strong></div>
-                                    <div className="d-flex justify-content-between mb-4 fs-4"><span className="text-muted fw-bold">Wykorzystane punkty:</span> <strong className="text-danger fs-3">-{useBonuses ? bonusesToSpend : 0}</strong></div>
-                                    <div className="d-flex justify-content-between mb-4 fs-4"><span className="text-muted fw-bold">Metoda płatności:</span> <strong className="text-dark fs-3">{orderSummary.paymentMethod || 'Karta'}</strong></div>
-                                    <div className="d-flex justify-content-between mb-4 pt-4 border-top border-2 fs-3"><span className="text-muted fw-bold">Razem zapłacono:</span> <strong className="text-dark fw-bold fs-1">{orderSummary.totalPaid} PLN</strong></div>
-                                    <div className="d-flex justify-content-between mt-5 fs-3 text-success fw-bold"><span>Zdobyte punkty:</span> <span>+{orderSummary.bonusesEarned}</span></div>
+                                <h2 className="text-success text-center mb-3 fw-bold" style={{ fontSize: '1.5rem' }}>Płatność zakończona sukcesem!</h2>
+                                <div className="bg-light p-3 rounded mb-4 shadow-sm border">
+                                    <h3 className="mb-3 fs-5 fw-bold border-bottom pb-2 text-dark">Podsumowanie zamówienia</h3>
+                                    <div className="d-flex justify-content-between mb-2 fs-6"><span className="text-muted fw-bold">Paliwo:</span> <strong className="text-dark">{orderSummary.fuelName}</strong></div>
+                                    <div className="d-flex justify-content-between mb-2 fs-6"><span className="text-muted fw-bold">Ilość:</span> <strong className="text-dark">{orderSummary.volume} L</strong></div>
+                                    <div className="d-flex justify-content-between mb-2 fs-6"><span className="text-muted fw-bold">Suma częściowa:</span> <strong className="text-dark">{orderSummary.amountBeforeDiscount} PLN</strong></div>
+                                    <div className="d-flex justify-content-between mb-2 fs-6"><span className="text-muted fw-bold">Wykorzystane punkty:</span> <strong className="text-danger">-{useBonuses ? bonusesToSpend : 0}</strong></div>
+                                    <div className="d-flex justify-content-between mb-2 fs-6"><span className="text-muted fw-bold">Metoda płatności:</span> <strong className="text-dark">{orderSummary.paymentMethod || 'Karta'}</strong></div>
+                                    <div className="d-flex justify-content-between mb-3 pt-3 border-top fs-5"><span className="text-muted fw-bold">Razem zapłacono:</span> <strong className="text-dark fw-bold">{orderSummary.totalPaid} PLN</strong></div>
+                                    <div className="d-flex justify-content-between mt-3 fs-6 text-success fw-bold"><span>Zdobyte punkty:</span> <span>+{orderSummary.bonusesEarned}</span></div>
                                 </div>
-                                <button className="btn btn-warning w-100 py-4 fs-3 fw-bold text-dark rounded shadow" onClick={startPump}>Uruchom dystrybutor</button>
+                                <button className="btn btn-warning w-100 py-2 fs-5 fw-bold text-dark rounded shadow" onClick={startPump}>Uruchom dystrybutor</button>
                             </>
                         ) : (
-                            <div className="text-center p-5">
-                                <h2 className="text-primary mb-4 fw-bold" style={{ fontSize: '3rem' }}>Dystrybutor pracuje...</h2>
-                                <div style={{ fontSize: '100px', marginBottom: '32px', animation: 'pulse 2s infinite' }}>⛽</div>
-                                <p className="mb-5 text-muted fw-bold" style={{ fontSize: '2rem' }}>Wydawanie <span className="text-dark">{orderSummary.volume} L</span> paliwa {orderSummary.fuelName}</p>
-                                <button className="btn btn-primary w-100 py-4 fs-3 fw-bold rounded shadow" onClick={finishAndClose}>Zakończ</button>
+                            <div className="text-center p-4">
+                                <h2 className="text-primary mb-3 fw-bold" style={{ fontSize: '1.5rem' }}>Dystrybutor pracuje...</h2>
+                                <div style={{ fontSize: '60px', marginBottom: '16px', animation: 'pulse 2s infinite' }}>⛽</div>
+                                <p className="mb-4 text-muted fw-bold" style={{ fontSize: '1.1rem' }}>Wydawanie <span className="text-dark">{orderSummary.volume} L</span> paliwa {orderSummary.fuelName}</p>
+                                <button className="btn btn-primary w-100 py-2 fs-5 fw-bold rounded shadow" onClick={finishAndClose}>Zakończ</button>
                             </div>
                         )}
                     </div>

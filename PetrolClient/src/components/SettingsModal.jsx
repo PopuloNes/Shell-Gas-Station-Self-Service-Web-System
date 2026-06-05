@@ -167,7 +167,6 @@ const SettingsModal = ({ show, onHide }) => {
                                         <Form.Label>Type</Form.Label>
                                         <Form.Select value={newPaymentType} onChange={e => setNewPaymentType(e.target.value)}>
                                             <option value="card">Credit/Debit Card</option>
-                                            <option value="blik">Blik</option>
                                             <option value="crypto">Crypto Wallet</option>
                                         </Form.Select>
                                     </Form.Group>

@@ -339,3 +339,4 @@ C:\Users\metro\Desktop\Petrol\PetrolUnitTests\obj\Debug\net10.0\refint\PetrolUni
 C:\Users\metro\Desktop\Petrol\PetrolUnitTests\obj\Debug\net10.0\PetrolUnitTests.pdb
 C:\Users\metro\Desktop\Petrol\PetrolUnitTests\obj\Debug\net10.0\PetrolUnitTests.genruntimeconfig.cache
 C:\Users\metro\Desktop\Petrol\PetrolUnitTests\obj\Debug\net10.0\ref\PetrolUnitTests.dll
+C:\Users\metro\Desktop\Petrol\PetrolUnitTests\obj\Debug\net10.0\PetrolUnitTests.sourcelink.json

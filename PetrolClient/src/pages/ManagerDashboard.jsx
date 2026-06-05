@@ -15,16 +15,23 @@ const ManagerDashboard = () => {
 
     const [newPumpName, setNewPumpName] = useState('');
     const [transactions, setTransactions] = useState([]);
+    const [availableFuelTypes, setAvailableFuelTypes] = useState([]);
+    const [selectedFuelTypeId, setSelectedFuelTypeId] = useState('');
 
     const fetchStation = async () => {
         try {
             setLoading(true);
-            const [stationRes, txRes] = await Promise.all([
+            const [stationRes, txRes, fuelTypesRes] = await Promise.all([
                 api.get('/ManagerStation'),
-                api.get('/ManagerStation/transactions')
+                api.get('/ManagerStation/transactions'),
+                api.get('/ManagerStation/available-fuel-types')
             ]);
             setStation(stationRes.data);
             setTransactions(txRes.data);
+            setAvailableFuelTypes(fuelTypesRes.data);
+            if (fuelTypesRes.data.length > 0) {
+                setSelectedFuelTypeId(fuelTypesRes.data[0].id);
+            }
             setError(null);
         } catch (err) {
             setError(err.response?.data?.message || 'Failed to load gas station data');
@@ -55,9 +62,9 @@ const ManagerDashboard = () => {
     };
 
     const handleTogglePumpStatus = async (pumpId, currentStatus) => {
-        // Status: 0 = Disabled, 1 = Free, 2 = Maintenance, etc.
-        // We toggle between Disabled (0) and Free (1)
-        const newStatus = currentStatus === 1 ? 0 : 1; 
+        // Status: 0 = Free, 1 = Busy, 2 = Disabled
+        // We toggle between Disabled (2) and Free (0)
+        const newStatus = currentStatus === 0 ? 2 : 0; 
         try {
             await api.put(`/ManagerStation/pumps/${pumpId}/status`, { status: newStatus });
             fetchStation();
@@ -110,6 +117,45 @@ const ManagerDashboard = () => {
         }
     };
 
+    const handleAddTank = async () => {
+        if (!selectedFuelTypeId) return;
+        try {
+            await api.post('/ManagerStation/tanks', { fuelTypeId: Number(selectedFuelTypeId) });
+            fetchStation();
+        } catch (err) {
+            alert(err.response?.data?.message || 'Failed to add tank');
+        }
+    };
+
+    const handleDeleteTank = async (tankId) => {
+        if (!window.confirm('Are you sure you want to completely delete this fuel tank?')) return;
+        try {
+            await api.delete(`/ManagerStation/tanks/${tankId}`);
+            fetchStation();
+        } catch (err) {
+            alert(err.response?.data?.message || 'Failed to delete tank');
+        }
+    };
+
+    const handleLinkAllPumps = async (tankId) => {
+        try {
+            await api.post(`/ManagerStation/tanks/${tankId}/pumps`);
+            fetchStation();
+        } catch (err) {
+            alert(err.response?.data?.message || 'Failed to link tank to all pumps');
+        }
+    };
+
+    const handleUnlinkAllPumps = async (tankId) => {
+        if (!window.confirm('Are you sure you want to unlink this fuel from all pumps?')) return;
+        try {
+            await api.delete(`/ManagerStation/tanks/${tankId}/pumps`);
+            fetchStation();
+        } catch (err) {
+            alert(err.response?.data?.message || 'Failed to unlink tank from all pumps');
+        }
+    };
+
     if (loading) return <div className="text-center mt-5 fs-4 text-muted">Loading dashboard...</div>;
 
     return (
@@ -141,7 +187,23 @@ const ManagerDashboard = () => {
                         <div className="col-md-6">
                             <div className="card shadow-sm border-0 h-100">
                                 <div className="card-body">
-                                    <h4 className="card-title text-danger fw-bold border-bottom pb-2 mb-3">Fuel Tanks Management</h4>
+                                    <div className="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                                        <h4 className="card-title text-danger fw-bold m-0">Fuel Tanks Management</h4>
+                                        {availableFuelTypes.length > 0 && (
+                                            <div className="d-flex gap-2">
+                                                <select 
+                                                    className="form-select form-select-sm" 
+                                                    value={selectedFuelTypeId} 
+                                                    onChange={e => setSelectedFuelTypeId(e.target.value)}
+                                                >
+                                                    {availableFuelTypes.map(f => (
+                                                        <option key={f.id} value={f.id}>{f.name}</option>
+                                                    ))}
+                                                </select>
+                                                <button className="btn btn-warning btn-sm fw-bold text-nowrap" onClick={handleAddTank}>Add Tank</button>
+                                            </div>
+                                        )}
+                                    </div>
                                     {station.availableFuels?.map(fuel => (
                                         <div key={fuel.tankId} className="border rounded p-3 mb-3 bg-light d-flex justify-content-between align-items-center">
                                             <div>
@@ -153,7 +215,7 @@ const ManagerDashboard = () => {
                                                     Price: <span className="text-danger fw-bold">{fuel.price.toFixed(2)} PLN/L</span>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div className="d-flex flex-column align-items-end gap-2">
                                                 {replenishTankId === fuel.tankId ? (
                                                     <div className="d-flex gap-2 align-items-center">
                                                         <input 
@@ -170,6 +232,11 @@ const ManagerDashboard = () => {
                                                 ) : (
                                                     <button className="btn btn-outline-danger btn-sm fw-bold" onClick={() => setReplenishTankId(fuel.tankId)}>Replenish</button>
                                                 )}
+                                                <div className="d-flex gap-1 mt-1">
+                                                    <button className="btn btn-outline-success btn-sm" onClick={() => handleLinkAllPumps(fuel.tankId)} title="Link to all active pumps"><i className="bi bi-link"></i> Link All</button>
+                                                    <button className="btn btn-outline-warning btn-sm" onClick={() => handleUnlinkAllPumps(fuel.tankId)} title="Unlink from all pumps"><i className="bi bi-x-circle"></i> Unlink All</button>
+                                                    <button className="btn btn-outline-dark btn-sm" onClick={() => handleDeleteTank(fuel.tankId)} title="Delete Tank"><i className="bi bi-trash"></i> Delete</button>
+                                                </div>
                                             </div>
                                         </div>
                                     ))}
@@ -200,14 +267,14 @@ const ManagerDashboard = () => {
                                             <div className="d-flex justify-content-between align-items-center mb-3">
                                                 <h5 className="fw-bold text-dark m-0">{pump.name}</h5>
                                                 <div className="d-flex gap-2 align-items-center">
-                                                    <span className={`badge ${pump.status === 1 ? 'bg-success' : 'bg-danger'}`}>
-                                                        {pump.status === 1 ? 'Free (Open)' : 'Disabled (Closed)'}
+                                                    <span className={`badge ${pump.status === 0 ? 'bg-success' : 'bg-danger'}`}>
+                                                        {pump.status === 0 ? 'Free (Open)' : 'Disabled (Closed)'}
                                                     </span>
                                                     <button 
-                                                        className={`btn btn-sm fw-bold ${pump.status === 1 ? 'btn-outline-danger' : 'btn-outline-success'}`}
+                                                        className={`btn btn-sm fw-bold ${pump.status === 0 ? 'btn-outline-danger' : 'btn-outline-success'}`}
                                                         onClick={() => handleTogglePumpStatus(pump.id, pump.status)}
                                                     >
-                                                        {pump.status === 1 ? 'Close Pump' : 'Open Pump'}
+                                                        {pump.status === 0 ? 'Close Pump' : 'Open Pump'}
                                                     </button>
                                                     <button 
                                                         className="btn btn-danger btn-sm fw-bold"

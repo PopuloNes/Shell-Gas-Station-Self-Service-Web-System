@@ -26,8 +26,21 @@ const adminService = {
         const response = await api.post('/admin/gasstations/toggle-pumps', { status });
         return response.data;
     },
+    // Fuel Types
     updateFuelPrice: async (id, price) => {
         const response = await api.put(`/admin/fueltypes/${id}/price`, { price });
+        return response.data;
+    },
+    getFuelTypes: async () => {
+        const response = await api.get('/admin/fueltypes');
+        return response.data;
+    },
+    createFuelType: async (name, price) => {
+        const response = await api.post('/admin/fueltypes', { name, price });
+        return response.data;
+    },
+    deleteFuelType: async (id) => {
+        const response = await api.delete(`/admin/fueltypes/${id}`);
         return response.data;
     },
 

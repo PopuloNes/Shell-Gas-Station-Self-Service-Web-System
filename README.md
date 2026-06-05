@@ -72,3 +72,59 @@ Upon the first database initialization, the system automatically seeds test user
 *   **Username:** `client`
 *   **Password:** `password`
 *   *(The client account is automatically linked to a 100-point bonus card and cryptocurrency wallets for testing payments).*
+
+## 📊 Project Workflow
+
+### System Architecture
+```mermaid
+graph TD
+    ClientUser((Client))
+    ManagerUser((Manager))
+    AdminUser((Admin))
+
+    subgraph "Frontend (React / Vite)"
+        ClientUI[Client Dashboard]
+        ManagerUI[Manager Dashboard]
+        AdminUI[Admin Dashboard]
+    end
+
+    subgraph "Backend (ASP.NET Core)"
+        AuthService[Auth Service (JWT)]
+        StationAPI[Gas Station API]
+        TransactionAPI[Order & Payment API]
+        AdminAPI[Admin Management API]
+    end
+
+    subgraph "Storage"
+        DB[(SQLite Database)]
+    end
+
+    ClientUser --> ClientUI
+    ManagerUser --> ManagerUI
+    AdminUser --> AdminUI
+
+    ClientUI --> AuthService & StationAPI & TransactionAPI
+    ManagerUI --> AuthService & StationAPI
+    AdminUI --> AuthService & AdminAPI
+
+    AuthService & StationAPI & TransactionAPI & AdminAPI <--> DB
+```
+
+### Refueling Workflow
+```mermaid
+sequenceDiagram
+    actor Client
+    participant App as Client Dashboard
+    participant API as Petrol API
+    participant DB as Database
+
+    Client->>App: Choose Station on Map
+    Client->>App: Select Fuel, Pump, and Input Amount/Volume
+    Client->>App: Choose Payment (Card / Crypto / Blik)
+    App->>API: Submit Checkout Request
+    API->>DB: Check Pump Availability & Tank Volume
+    API->>DB: Deduct Fuel Volume & Add Order Transaction
+    DB-->>API: Confirm Database Updates
+    API-->>App: Return Success & Order Summary
+    App-->>Client: Display Summary & Start Pump
+```
