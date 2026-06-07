@@ -70,7 +70,7 @@ Upon the first database initialization, the system automatically seeds test user
 *   **Phone Number:** `+48000000003`
 *   **Username:** `client`
 *   **Password:** `password`
-*   *(The client account is automatically linked to a 100-point bonus card and cryptocurrency wallets for testing payments).*
+*   *(The client account is automatically linked to a 20-point bonus card and cryptocurrency wallets for testing payments).*
 
 ## 📊 Project Workflow
 
