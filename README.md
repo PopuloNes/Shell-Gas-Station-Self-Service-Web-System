@@ -27,7 +27,6 @@ The platform allows gas station customers to purchase fuel independently via a c
 
 *   **PetrolAPI** — The server-side application (Backend in C# / .NET). It handles business logic, authorization (JWT), and database interactions (SQLite).
 *   **PetrolClient** — The client-side application (Frontend in React / TypeScript). It provides the user interface for customers, managers, and administrators.
-*   **PetrolWPF / PetrolControlLibrary** — Desktop applications and libraries designed for on-site hardware and terminal management.
 *   **PetrolUnitTests** — Unit tests to ensure the correctness of the business logic.
 
 ## 🛠 Technology Stack
