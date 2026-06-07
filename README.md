@@ -19,20 +19,21 @@ The platform allows gas station customers to purchase fuel independently via a c
     *   Access to reports and station statistics.
 *   **For Administrators:**
     *   Full administrative control over the entire gas station network.
-    *   User, manager, and role management.
-    *   Management of fuel reservoirs (tanks) and pricing.
+    *   User and manager account management.
+    *   Management of fuel reservoirs (tanks), dynamic pump connections, and global fuel pricing.
     *   In-depth statistics and system-wide analytics.
 
 ## 📁 Project Structure
 
 *   **PetrolAPI** — The server-side application (Backend in C# / .NET). It handles business logic, authorization (JWT), and database interactions (SQLite).
-*   **PetrolClient** — The client-side application (Frontend in React / TypeScript). It provides the user interface for customers, managers, and administrators.
-*   **PetrolUnitTests** — Unit tests to ensure the correctness of the business logic.
+*   **PetrolClient** — The client-side application (Frontend in React / Vite). It provides the user interfaces for customers, managers, and administrators.
+
+*(Note: Legacy WPF and desktop applications have been deprecated and fully removed to transition to a pure web architecture.)*
 
 ## 🛠 Technology Stack
 
-*   **Backend:** C#, .NET 8/9, Entity Framework Core, SQLite, JWT-Authentication.
-*   **Frontend:** React (Vite), TypeScript.
+*   **Backend:** C#, .NET 8/9, Entity Framework Core, SQLite, JWT Authentication.
+*   **Frontend:** React (Vite), React Router, React Bootstrap, Leaflet (Interactive Maps).
 *   **Architecture:** REST API.
 
 ## 🔧 Installation and Setup
@@ -63,14 +64,14 @@ Upon the first database initialization, the system automatically seeds test user
 *   **Password:** `admin` *(Note: During the very first DB initialization, the password might be `password`, but it resets to `admin` upon API restart)*
 
 ### Manager (Gas Station Management)
-*   **Username:** `manager1 or 2 or 3....12`
+*   **Username:** `manager1` (or `manager2`, etc., up to `manager12`)
 *   **Password:** `manager`
 
 ### Client (Test Customer)
 *   **Phone Number:** `+48000000003`
 *   **Username:** `client`
 *   **Password:** `password`
-*   *(The client account is automatically linked to a 20-point bonus card and cryptocurrency wallets for testing payments).*
+*   *(The client account is automatically linked to a bonus card and cryptocurrency wallets for testing payments).*
 
 ## 📊 Project Workflow
 

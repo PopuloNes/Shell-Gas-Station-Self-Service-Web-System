@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetrolAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42bac8990843a0657463c250bcb42fb76593a32a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb710c7a4e3b23a6c7754d12b256e4c848a3b245")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetrolAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetrolAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
