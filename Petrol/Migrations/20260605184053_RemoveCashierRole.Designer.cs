@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using gsst.Services;
 
@@ -10,9 +11,11 @@ using gsst.Services;
 namespace Petrol.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260605184053_RemoveCashierRole")]
+    partial class RemoveCashierRole
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.3");
@@ -1655,11 +1658,19 @@ namespace Petrol.Migrations
                         new
                         {
                             Id = 1,
-                            FullName = "admin",
+                            FullName = "Михайло Стадніков",
                             Password = "admin",
                             PhoneNumber = "+48000000001",
                             Role = "Admin",
                             Username = "admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FullName = "Олексій Романенко",
+                            Password = "cashier",
+                            Role = "Client",
+                            Username = "cashier"
                         },
                         new
                         {
