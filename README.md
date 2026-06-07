@@ -31,7 +31,7 @@ The platform allows gas station customers to purchase fuel independently via a c
 
 ## 🛠 Technology Stack
 
-*   **Backend:** C#, .NET 8/9, Entity Framework Core, SQLite, JWT Authentication.
+*   **Backend:** C#, .NET 10, Entity Framework Core, SQLite, JWT Authentication.
 *   **Frontend:** React (Vite), React Router, React Bootstrap, Leaflet (Interactive Maps).
 *   **Architecture:** REST API.
 
